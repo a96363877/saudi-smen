@@ -27,7 +27,7 @@ import {
 } from 'firebase/firestore';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { playNotificationSound } from '@/lib/actions';
-import { db } from '@/lib/firestore';
+import { auth, db } from '@/lib/firestore';
 interface Notification {
   createdDate: string;
   id: string;
